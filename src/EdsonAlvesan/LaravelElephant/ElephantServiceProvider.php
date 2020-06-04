@@ -17,7 +17,7 @@ class ElephantServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->publishes([
-            dirname(__DIR__) . '../../config/elephant-io.php' => config_path('elephant-io.php'),
+            dirname(__DIR__) . '/config/elephant-io.php' => config_path('elephant-io.php'),
         ], 'config');
     }
 
