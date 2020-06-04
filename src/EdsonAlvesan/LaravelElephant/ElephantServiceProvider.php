@@ -1,9 +1,9 @@
 <?php
-namespace Moura137\LaravelElephant;
+namespace EdsonAlvesan\LaravelElephant;
 
 use ElephantIO\Client;
 use ElephantIO\Engine\SocketIO\Version1X;
-use Moura137\LaravelElephant\LaraElephantIO;
+use EdsonAlvesan\LaravelElephant\LaraElephantIO;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 

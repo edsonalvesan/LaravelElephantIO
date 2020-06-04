@@ -10,37 +10,37 @@ This is a service provider for the Laravel PHP Framework, it provides access to 
 
 ### Installation
 
-- [API on Packagist](https://packagist.org/packages/moura137/laravel-elephantio)
-- [API on GitHub](https://github.com/moura137/LaravelElephantIO)
+- [API on Packagist](https://packagist.org/packages/edsonalvesan/laravel-elephantio)
+- [API on GitHub](https://github.com/edsonalvesan/LaravelElephantIO)
 
 In the `require` key of `composer.json` file add the following
 
-    "moura137/laravel-elephantio": "~1.0"
+    "edsonalvesan/laravel-elephantio": "~1.0"
 
 or
 
 Require this package with composer:
 
-    composer require moura137/laravel-elephantio
+    composer require edsonalvesan/laravel-elephantio
 
 
-In your `config/app.php` add `'Moura137\LaravelElephant\ElephantServiceProvider'` to the end of the `$providers` array
+In your `config/app.php` add `'EdsonAlvesan\LaravelElephant\ElephantServiceProvider'` to the end of the `$providers` array
 
 ```php
 'providers' => [
     ...
-    Moura137\LaravelElephant\ElephantServiceProvider::class,
+    EdsonAlvesan\LaravelElephant\ElephantServiceProvider::class,
 
 ],
 ```
 
-At the end of `config/app.php` add `'Elephant' => 'Moura137\LaravelElephant\ElephantFacade'` to the `$aliases` array
+At the end of `config/app.php` add `'Elephant' => 'EdsonAlvesan\LaravelElephant\ElephantFacade'` to the `$aliases` array
 
 ```php
 'aliases' => array(
 
     ...
-    'Elephant'    => Moura137\LaravelElephant\ElephantFacade::class,
+    'Elephant'    => EdsonAlvesan\LaravelElephant\ElephantFacade::class,
 
 ),
 ```
@@ -50,7 +50,7 @@ At the end of `config/app.php` add `'Elephant' => 'Moura137\LaravelElephant\Elep
 Publish config using artisan CLI.
 
 ~~~
-php artisan vendor:publish --provider="Moura137\LaravelElephant\ElephantServiceProvider"
+php artisan vendor:publish --provider="EdsonAlvesan\LaravelElephant\ElephantServiceProvider"
 ~~~
 
 ### Usage

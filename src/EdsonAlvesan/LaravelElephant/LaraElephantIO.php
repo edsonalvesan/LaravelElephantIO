@@ -1,5 +1,5 @@
 <?php
-namespace Moura137\LaravelElephant;
+namespace EdsonAlvesan\LaravelElephant;
 
 use ElephantIO\Client as ElephantIO;
 

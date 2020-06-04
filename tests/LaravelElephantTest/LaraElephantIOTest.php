@@ -3,7 +3,7 @@ namespace LaravelElephantTest;
 
 use Mockery as m;
 use PHPUnit_Framework_TestCase;
-use Moura137\LaravelElephant\LaraElephantIO;
+use EdsonAlvesan\LaravelElephant\LaraElephantIO;
 
 class LaraElephantIOTest extends PHPUnit_Framework_TestCase
 {

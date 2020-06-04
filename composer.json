@@ -1,13 +1,13 @@
 {
-    "name": "moura137/laravel-elephantio",
+    "name": "edsonalvesan/laravel-elephantio",
     "description": "ElephantIO Service Provider for the Laravel PHP Framework",
     "keywords": ["socket.io","laravel", "php","elephant.io"],
     "type": "library",
     "license": "BSD-3-Clause",
-    "homepage": "https://github.com/moura137/LaravelElephantIO",
+    "homepage": "https://github.com/edsonalvesan/LaravelElephantIO",
     "require": {
         "php": ">=5.4.0",
-        "laravel/framework": "~5.0",
+        "laravel/framework": "*",
         "wisembly/elephant.io": "~3.0"
     },
     "require-dev": {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Moura137": "src/"
+            "EdsonAlvesan\\LaravelElephant\\": "src/"
         }
     },
     "prefer-stable": true

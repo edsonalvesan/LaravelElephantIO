@@ -3,8 +3,8 @@ namespace LaravelElephantTest;
 
 use Mockery as m;
 use PHPUnit_Framework_TestCase;
-use Moura137\LaravelElephant\ElephantServiceProvider;
-use Moura137\LaravelElephant\LaraElephantIO;
+use EdsonAlvesan\LaravelElephant\ElephantServiceProvider;
+use EdsonAlvesan\LaravelElephant\LaraElephantIO;
 
 class ElephantServiceProviderTest extends PHPUnit_Framework_TestCase
 {

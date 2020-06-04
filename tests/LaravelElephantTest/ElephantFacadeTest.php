@@ -3,7 +3,7 @@ namespace LaravelElephantTest;
 
 use PHPUnit_Framework_TestCase;
 use ReflectionClass;
-use Moura137\LaravelElephant\ElephantFacade;
+use EdsonAlvesan\LaravelElephant\ElephantFacade;
 
 class ElephantFacadeTest extends PHPUnit_Framework_TestCase
 {
