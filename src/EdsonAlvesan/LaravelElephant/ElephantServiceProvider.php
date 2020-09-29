@@ -3,6 +3,7 @@ namespace EdsonAlvesan\LaravelElephant;
 
 use ElephantIO\Client;
 use ElephantIO\Engine\SocketIO\Version1X;
+use ElephantIO\Engine\SocketIO\Version2X;
 use EdsonAlvesan\LaravelElephant\LaraElephantIO;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
@@ -33,7 +34,22 @@ class ElephantServiceProvider extends BaseServiceProvider
 
             $options = array('debug' => $config['debug']);
 
-            return new Client(new Version1X($config['url'], $options));
+            $version = array('version' => $config['version']);
+
+            switch ($version) {
+                case 1:
+                    return new Client(new Version1X($config['url'], $options));
+                    break;
+                case 2:
+                    return new Client(new Version2X($config['url'], $options));
+                    break;
+                default
+                   return new Client(new Version2X($config['url'], $options));
+                break;
+            }
+
+
+            
         });
 
         $this->app->singleton('laravel.elephantio', function($app){
