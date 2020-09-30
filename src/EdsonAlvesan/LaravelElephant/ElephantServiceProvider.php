@@ -43,7 +43,7 @@ class ElephantServiceProvider extends BaseServiceProvider
                 case 2:
                     return new Client(new Version2X($config['url'], $options));
                     break;
-                default
+                default:
                    return new Client(new Version2X($config['url'], $options));
                 break;
             }
